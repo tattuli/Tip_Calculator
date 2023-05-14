@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon-32x32.png" />
+    <title>Tip Calculator App</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/logo.svg" alt="splitter-logo" class="splitter" />
+    </header>
+    <div class="container">
+      <main>
+        <div class="calculator-container">
+          <div class="grid-1">
+            <div class="field field--bill">
+              <p class="heading heading--bill">Bill</p>
+              <div class="input-box input-box--bill">
+                <img src="img/icon-dollar.svg" alt="dollar-icon" class="icon" />
+                <div class="input-field">
+                  <input
+                    id="billAmt"
+                    class="number number--bill"
+                    type="number"
+                    placeholder="0"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="select-tip">
+              <p class="select">Select Tip %</p>
+              <div class="select-tip-grid">
+                <p>
+                  <button id="btn5" class="tip-percent-box" value="5">
+                    5%
+                  </button>
+                </p>
+                <p>
+                  <button id="btn10" class="tip-percent-box" value="10">
+                    10%
+                  </button>
+                </p>
+                <p>
+                  <button id="btn15" class="tip-percent-box" value="15">
+                    15%
+                  </button>
+                </p>
+                <p>
+                  <button id="btn25" class="tip-percent-box" value="25">
+                    25%
+                  </button>
+                </p>
+                <p>
+                  <button id="btn50" class="tip-percent-box" value="50">
+                    50%
+                  </button>
+                </p>
+                <div class="tip-percent-box tip-percent-box--custom">
+                  <input
+                    id="customPercent"
+                    class="custom"
+                    type="number"
+                    name=""
+                    placeholder="Custom"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="people-number">
+              <div class="field field--people">
+                <p class="heading heading--people">Number of People</p>
+                <div class="input-box input-box--people">
+                  <img
+                    src="img/icon-person.svg"
+                    alt="person-icon"
+                    class="icon"
+                  />
+                  <div class="input-field">
+                    <input
+                      id="numPeople"
+                      class="number number--people"
+                      type="number"
+                      placeholder="0"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="tip">
+              <div class="tip-amount">
+                <div class="text-box">
+                  <p class="amount">Tip Amount</p>
+                  <p class="unit">/ person</p>
+                </div>
+                <p id="tipPersonAmt" class="gratuity gratuity--amount">$0.00</p>
+              </div>
+              <div class="tip-total">
+                <div class="text-box">
+                  <p class="total">Total</p>
+                  <p class="unit">/ person</p>
+                </div>
+                <p id="totalAmt" class="gratuity gratuity--total">$0.00</p>
+              </div>
+            </div>
+            <div class="reset">
+              <p>
+                <button id="btnReset" class="btn">RESET</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  padding-left: 26rem;
+}
+
+.calculator-container {
+  width: 92rem;
+  height: 48.1rem;
+  background-color: #ffffff;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header {
+  padding: 16.3rem 67.65rem 8.786rem 67.65rem;
+}
+
+.grid-1 {
+  padding-left: 4.8rem;
+}
+.heading {
+  padding-top: 4.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.6rem;
+  color: #5e7a7d;
+}
+.input-box {
+  width: 37.9rem;
+  height: 4.8rem;
+  border-radius: 5px;
+  background-color: #f3f9fa;
+  display: flex;
+  align-items: center;
+  gap: 24.39rem;
+}
+.icon {
+  margin-left: 1.926rem;
+}
+.number {
+  font-family: "Space Mono", monospace;
+  width: 8.9rem;
+  height: 3.6rem;
+  border: 1px solid #f3f9fa;
+  background-color: #f3f9fa;
+  font-size: 2.4rem;
+  text-align: right;
+  outline: none;
+}
+.input-field {
+  color: #00474b;
+  opacity: 35%;
+  text-align: right;
+  font-size: 2.4rem;
+}
+
+.select {
+  font-size: 1.6rem;
+  color: #5e7a7d;
+  margin-top: 4rem;
+  margin-bottom: 1.6rem;
+}
+
+.select-tip-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1.4rem;
+  row-gap: 1.6rem;
+}
+
+.tip-percent-box {
+  font-family: "Space Mono", monospace;
+  width: 12.2rem;
+  height: 4.8rem;
+  border-radius: 5px;
+  background-color: #00474b;
+  border: 1px solid #00474b;
+  font-size: 2.4rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom {
+  font-family: "Space Mono", monospace;
+  width: 8.9rem;
+  height: 3.6rem;
+  font-size: 2.4rem;
+  text-align: right;
+  color: #547878;
+  background-color: #f3f9fa;
+  border: none;
+  outline: none;
+}
+.tip-percent-box--custom {
+  background-color: #f3f9fa;
+  border: 1px solid #f3f9fa;
+}
+
+.grid-2 {
+  width: 41.3rem;
+  height: 41.7rem;
+  border-radius: 15px;
+  background-color: #00474b;
+  margin: 3.2rem;
+}
+
+.tip {
+  display: flex;
+  flex-direction: column;
+  gap: 5.3rem;
+  padding-left: 4rem;
+  padding-top: 5.6rem;
+}
+
+.tip-amount,
+.tip-total {
+  display: flex;
+  align-items: center;
+  gap: 9.2rem;
+}
+.tip-total {
+  gap: 12.6rem;
+}
+
+.unit {
+  font-size: 1.3rem;
+  color: #7f9d9f;
+}
+
+.amount,
+.total {
+  font-size: 1.6rem;
+}
+
+.gratuity {
+  color: #26c2ae;
+  /* font-size: 4.8rem; */
+  font-size: 3.8rem;
+}
+.btn {
+  width: 33.3rem;
+  height: 4.8rem;
+  border-radius: 5px;
+  background-color: #0d686d;
+  margin-top: 9.4rem;
+  margin-left: 4rem;
+  border: 1px solid #0d686d;
+  font-size: 2rem;
+  color: #00474b;
+  font-weight: 700;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #9fe8df;
+}
+
+.tip-percent-box:hover {
+  cursor: pointer;
+  background-color: #9fe8df;
+  border: 1px solid #9fe8df;
+  color: #00474b;
+}
+
+.tip-percent-box--custom:hover {
+  cursor: pointer;
+  background-color: #f3f9fa;
+  border: 2px solid #26c2ae;
+}
+.input-box:hover {
+  cursor: pointer;
+  border: 2px solid #26c2ae;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* 480px*/
+@media (max-width: 30em) {
+  .header {
+    padding: 5rem 14.4rem 4rem 14.4rem;
+  }
+  .container {
+    padding: 0;
+    justify-content: center;
+  }
+  .calculator-container {
+    grid-template-columns: 1fr;
+    width: 37.5rem;
+    height: 82rem;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  }
+  .grid-1 {
+    padding: 3.2rem;
+  }
+  .input-box {
+    width: 31.1rem;
+    height: 4.8rem;
+    gap: 18rem;
+  }
+  .select-tip-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.56rem;
+  }
+  .tip-percent-box {
+    width: 14.663rem;
+    height: 4.8rem;
+  }
+  .heading {
+    padding-top: 3.2rem;
+  }
+  .grid-2 {
+    width: 32.7rem;
+    height: 25.7rem;
+    margin: 0;
+    margin-left: 2.4rem;
+  }
+  .tip {
+    padding-left: 2.4rem;
+    padding-top: 3.9rem;
+    gap: 2.2rem;
+  }
+  .custom {
+    width: 11.149rem;
+  }
+  .gratuity {
+    font-size: 3.2rem;
+  }
+  .tip-amount {
+    gap: 8.7rem;
+  }
+  .tip-total {
+    gap: 12.1rem;
+  }
+  .btn {
+    width: 29.1rem;
+    height: 4.8rem;
+    margin-top: 3.4rem;
+    margin-left: 2rem;
+    background-color: #26c2ae;
+  }
+  .tip-percent-box:hover {
+    background-color: #26c2ae;
+    border: 1px solid #26c2ae;
+    color: #00474b;
+  }
+  .tip-percent-box--custom:hover {
+    background-color: #f3f9fa;
+    border: #f3f9fa;
+  }
+}
