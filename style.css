@@ -41,6 +41,13 @@ body {
   font-size: 1.6rem;
   color: #5e7a7d;
 }
+
+.hidden {
+  margin-left: 8.4rem;
+  color: #e17457;
+  opacity: 0;
+}
+
 .input-box {
   width: 37.9rem;
   height: 4.8rem;
@@ -228,6 +235,10 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .heading {
     padding-top: 3.2rem;
+  }
+  .hidden {
+    margin-left: 6rem;
+    font-size: 1rem;
   }
   .grid-2 {
     width: 32.7rem;

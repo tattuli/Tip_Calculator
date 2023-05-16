@@ -7,6 +7,8 @@ const totalAmt = document.querySelector("#totalAmt");
 const button = document.querySelector("button");
 const percentBox = document.querySelector(".select-tip-grid");
 const percentTip = document.querySelectorAll(".tip-percent-box");
+const hidden = document.querySelector(".hidden");
+const inputBoxP = document.querySelector(".input-box--people");
 const billAmt = () => {
   return bill.value;
 };
@@ -38,6 +40,9 @@ const calcTip = function (tip) {
     let total = money_round(+billAmt() + tipAmount);
     tipPersonAmt.textContent = "$" + tipAmount.toFixed(2);
     totalAmt.textContent = "$" + total.toFixed(2);
+  } else if (numPeople() <= 0) {
+    hidden.style.opacity = 100;
+    inputBoxP.style.border = "2px solid #e17457";
   }
 };
 
